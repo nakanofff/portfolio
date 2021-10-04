@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NakanoDesignPortfolio</title>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'iba3mzk',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="loading.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://use.typekit.net/nyg7mzb.css">
+<link rel="icon" href="img/nakano_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap" rel="stylesheet">
+<script src="js/three.min.js"></script>
+<script src="js/GLTFLoader.js"></script>
+<script src="js/home_3d.js"></script>
+<script src="js/move.js"></script>
+<script src="js/fadein.js"></script>
+</head>
+<body>
+
+    <div id="splash">
+        <div id="splash_text"></div>
+            <div class="loader_cover loader_cover-up"></div>
+            <div class="loader_cover loader_cover-down"></div>
+    </div>
+
+    <header>
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="index.html"><img src="img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+            </div>
+            <div class="menu_button">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        </div>
+
+        <canvas id="home_canvas">
+        </canvas>
+        
+        <div class="menu_outer">
+            <div class="menu_header_warpper">
+                <div class="menu_header_logo">
+                    <a href="index.html"><img src="img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+                </div>
+                <div class="close_button">
+                    <div class="close_line1"></div>
+                    <div class="close_line2"></div>
+                </div>
+            </div>
+
+            <div class="sns_wrapper">
+                <div class="instagram_section">
+                    <a href="img/instagram_icon.png"><img src="img/instagram_icon_gray.png" alt="インスタグラムアイコン"></a>
+                </div>
+                <div class="twitter_section">
+                    <a href="img/twitter_icon.png"><img src="img/twitter_icon_gray.png" alt="ツイッターアイコン"></a>
+                </div>
+            </div>
+
+            <div class="menu_wrapper">
+                        <nav class="menu_contents">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="home_link">HOME</a>
+                                    <div class="home_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="works.html" class="works_link">WORKS</a>
+                                    <div class="works_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="about_link">ABOUT</a>
+                                    <div class="about_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="contact_link">CONTACT</a>
+                                    <div class="contact_after_line">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+    </header>
+
+    <section id="top">
+        <div class="top_wrapper">
+            <h1 class="top_title_wrapper">
+                <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.58 432.73">
+                    <defs>
+                        <style>.pinkline{fill:#ff96ad;}.yelloline{fill:#feb740;}.blueline{fill:#8df0fd;}.grayline{fill:#bfbfbf;}.cls-5{fill:#ccc;}</style>
+                    </defs>
+                    <polygon class="pinkline" points="138.18 432.73 155.63 271.23 171.88 271.23 154.43 432.73 138.18 432.73"/>
+                    <polygon class="yelloline" points="207.27 432.73 224.71 271.23 240.97 271.23 223.52 432.73 207.27 432.73"/>
+                    <polygon class="blueline" points="69.09 432.73 86.54 271.23 102.79 271.23 85.34 432.73 69.09 432.73"/>
+                    <polygon class="grayline" points="0 432.73 17.45 271.23 33.71 271.23 16.26 432.73 0 432.73"/>
+                    <path class="cls-5" d="M247.09,15.86,218,253.78,82.86,81.32,63.54,238.49h-33L59.5,3.75,194.61,175.91l19.61-160Z"/>
+                    <path class="cls-5" d="M318.76,186.15l-27.11,52.34H255.74L378.88,0l76.85,238.49H421.27l-16.15-52.34ZM333,157.6H395.9L372,78.44Z"/>
+                    <path class="cls-5" d="M542.11,15.86l-11.54,94.59,90-94.59h41.68L558.4,119.39l93.43,119.1H612L528.12,129.92,514.85,238.49h-33l27.4-222.63Z"/>
+                    <path class="cls-5" d="M726.24,186.15l-27.11,52.34H663.22L786.36,0l76.86,238.49H828.76l-16.15-52.34Zm14.27-28.55h62.87L779.44,78.44Z"/>
+                    <path class="cls-5" d="M1105.89,15.86l-29.13,237.92L941.66,81.32,922.33,238.49h-33l29-234.74,135.1,172.16,19.61-160Z"/>
+                    <path class="cls-5" d="M1366.58,122.85q0,38.07-20.18,69.07a108.68,108.68,0,0,1-41.82,37.63q-25.8,13.27-57.09,13.27-50,0-81.62-31.87t-31.58-82.76q0-50.62,33.46-83.63,33.59-33.17,84.78-33.17t82.62,30.71Q1366.59,72.67,1366.58,122.85Zm-33.16-.29q0-36.48-21.63-58.39t-58.11-21.78q-36.62,0-61.56,24.51-24.66,24.52-24.66,61.29,0,36.33,22.92,60.12t58,23.65q36.48,0,60.7-25.52Q1333.43,161.21,1333.42,122.56Z"/>
+                    <path class="cls-5" d="M364.5,324.93l-8.44,69q-.8,6.18-1.78,10.76a48.37,48.37,0,0,1-2.22,7.71,29.54,29.54,0,0,1-7.56,11q-9.75,8.73-25.31,8.72-16.06,0-26-8.43a23,23,0,0,1-7.12-9.6c-1.36-3.3-2-7.92-2-13.89h15.56q.58,9.68,4.95,14.07t13.52,4.4q9.89,0,15.05-5.27t6.55-16.76l1.16-9.38Q330.61,395,319.41,395q-14,0-23.05-9.53-9.09-9.74-9.09-24.28,0-16.37,10.55-27.13t26.54-10.83q7.63,0,12.36,2.26a33.51,33.51,0,0,1,10.69,7.92l1-8.51ZM346,357.44q0-9.31-5.67-15t-14.84-5.75a20.51,20.51,0,0,0-15.85,7q-6.26,6.92-6.25,17.38,0,9.17,5.38,15,5.44,5.59,14.39,5.6a21.42,21.42,0,0,0,16.36-6.83Q346,367.91,346,357.44Z"/>
+                    <path class="cls-5" d="M403.11,324.93l-.73,5.89q8.14-7.71,16.43-7.7a19.45,19.45,0,0,1,13.24,5.3L421.8,341.66q-4.44-3.8-8.88-3.79a11.47,11.47,0,0,0-5.38,1.21,10.77,10.77,0,0,0-4,3.78,23.19,23.19,0,0,0-2.84,6.65,65.67,65.67,0,0,0-1.78,9.74l-4.22,34.18H378.6l8.44-68.5Z"/>
+                    <path class="cls-5" d="M511.16,324.93l-8.43,68.5H486.66l.94-7.42q-10.32,9-21.38,9-13.59,0-22.17-9.24t-8.59-23.92q0-16.94,9.82-27.78t25.52-10.83a29.51,29.51,0,0,1,12.51,2.4A35,35,0,0,1,494,334l1.09-9ZM491.6,357.22q0-9.09-5.23-14.76a17.48,17.48,0,0,0-13.53-5.75,19.22,19.22,0,0,0-15.12,7.06,25.84,25.84,0,0,0-6.11,17.45q0,9,5.09,14.76a16.67,16.67,0,0,0,13.09,5.74q8.86,0,15.34-7.19A25.37,25.37,0,0,0,491.6,357.22Z"/>
+                    <path class="cls-5" d="M549.63,324.93l-.87,7.2q10.4-8.86,21.88-8.87a30.14,30.14,0,0,1,22.76,9.52q9.09,9.53,9.09,24.07,0,16.15-10.4,27.2a33.8,33.8,0,0,1-25.67,11q-7.84,0-12.87-2.47-5.24-2.47-11.12-8.95l-6,49H520.32l13.24-107.69Zm36.79,32.58q0-9.09-5.23-14.91a17.12,17.12,0,0,0-13.38-5.89,21.21,21.21,0,0,0-16.29,7.13A25,25,0,0,0,545,361.36q0,9.09,5.53,14.62t14.25,5.67a19.91,19.91,0,0,0,15.42-7A25.12,25.12,0,0,0,586.42,357.51Z"/>
+                    <path class="cls-5" d="M647.57,270.61l-7.41,60.14q9.66-7.49,19.63-7.49t16,5.31A17.13,17.13,0,0,1,682,342.31c0,1.36-.07,2.9-.22,4.62s-.34,3.67-.58,5.85l-5,40.65H660.08l5.09-41.52a47.29,47.29,0,0,0,.44-6q0-9.15-10.76-9.16-15.42,0-18,20.87l-4.44,35.85H616.38l15.13-122.82Z"/>
+                    <path class="cls-5" d="M723.05,324.93l-8.43,68.5H698.55l8.43-68.5Zm5-32.57a8.26,8.26,0,0,1-2.54,6,8.34,8.34,0,0,1-6.11,2.55,8.46,8.46,0,0,1-6.18-2.62,9.06,9.06,0,0,1-2.55-6.33,8.57,8.57,0,0,1,8.51-8.58,8.34,8.34,0,0,1,6.18,2.69A8.45,8.45,0,0,1,728.07,292.36Z"/>
+                    <path class="cls-5" d="M796.13,331.55l-2,16.36a37.73,37.73,0,0,0-9.46-9.09,19.8,19.8,0,0,0-10.47-2.69,19.1,19.1,0,0,0-15,6.76q-5.89,6.76-5.89,17.38,0,10,5.53,15.93a18.84,18.84,0,0,0,14.47,6q8.5,0,17.6-7.34l-2.11,16.94A47.18,47.18,0,0,1,771,395.61q-15,0-24.5-9.82t-9.38-25.45q0-16.06,10.11-26.83a33.3,33.3,0,0,1,25.3-10.83Q784.86,322.68,796.13,331.55Z"/>
+                    <path class="cls-5" d="M935.38,270.61,920.26,393.43h-16l.87-7.34q-6,5.31-10.32,7.19A28.15,28.15,0,0,1,884.19,395q-14.4,0-23.56-9.53t-9.16-24.72q0-16.14,10-26.83t25.23-10.69A28.83,28.83,0,0,1,899.83,326q5.52,2.76,11.56,9.38l7.92-64.72ZM908.92,356.2q0-8.73-5.38-14.11t-14.11-5.38a19.88,19.88,0,0,0-15.63,7.06q-6.19,7.05-6.19,17.81,0,9.09,5.31,14.62T887,381.65q9.16,0,15.49-7.42Q908.91,367,908.92,356.2Z"/>
+                    <path class="cls-5" d="M960.4,364.93a16.23,16.23,0,0,0,5.23,12.43q5.31,4.88,13.53,4.87,11.26,0,17.31-8.43l12,6.61q-6.26,8.44-12.87,11.79t-16.72,3.41q-15.93,0-25.38-9.38T944,361.14q0-16.42,10.4-27.48t26.1-11q15.27,0,24.07,9.89t8.94,26.68c0,1.17-.07,3.06-.21,5.68ZM997.27,352q-2.55-15.86-17.53-15.85-14.18,0-18.47,15.85Z"/>
+                    <path class="cls-5" d="M1076.74,332.49l-9.09,9.09q-6.39-5.74-11.85-5.74a9.14,9.14,0,0,0-6.14,2.07,6.46,6.46,0,0,0-2.44,5.13,6.78,6.78,0,0,0,2,5q2,2.11,8.51,5.68,9.23,5.16,12.36,9.45,3.34,4.21,3.34,11,0,9.75-6.76,15.64-6.92,5.81-18,5.81-15.06,0-24.94-13.59l10.54-7.35q6.47,7.79,13.82,7.78a9.79,9.79,0,0,0,6.65-2.18,7.19,7.19,0,0,0,2.51-5.67,6.32,6.32,0,0,0-2.11-5,29.88,29.88,0,0,0-3.56-2.61c-1.7-1.12-4-2.45-6.91-4q-7.71-4.29-10.69-8.36a17.87,17.87,0,0,1-3-10.47,19.8,19.8,0,0,1,6.83-15.41q6.84-6.12,17.38-6.11Q1066.93,322.68,1076.74,332.49Z"/>
+                    <path class="cls-5" d="M1112.08,324.93l-8.43,68.5h-16.07l8.43-68.5Zm5-32.57a8.26,8.26,0,0,1-2.54,6,8.34,8.34,0,0,1-6.11,2.55,8.46,8.46,0,0,1-6.18-2.62,9.06,9.06,0,0,1-2.55-6.33,8.57,8.57,0,0,1,8.51-8.58,8.35,8.35,0,0,1,6.18,2.69A8.45,8.45,0,0,1,1117.1,292.36Z"/>
+                    <path class="cls-5" d="M1203.34,324.93l-8.43,69q-.81,6.18-1.78,10.76a50.56,50.56,0,0,1-2.22,7.71,29.45,29.45,0,0,1-7.57,11q-9.73,8.73-25.3,8.72-16.07,0-26-8.43a23,23,0,0,1-7.13-9.6c-1.36-3.3-2-7.92-2-13.89h15.56q.57,9.68,4.94,14.07t13.53,4.4q9.88,0,15-5.27t6.54-16.76l1.17-9.38q-10.19,7.78-21.38,7.78-14,0-23-9.53-9.09-9.74-9.09-24.28,0-16.37,10.54-27.13t26.54-10.83q7.63,0,12.36,2.26a33.3,33.3,0,0,1,10.69,7.92l1-8.51Zm-18.47,32.51q0-9.31-5.67-15t-14.83-5.75a20.51,20.51,0,0,0-15.86,7q-6.24,6.92-6.25,17.38,0,9.17,5.38,15,5.46,5.59,14.4,5.6a21.43,21.43,0,0,0,16.36-6.83Q1184.87,367.91,1184.87,357.44Z"/>
+                    <path class="cls-5" d="M1233.88,364.93a16.24,16.24,0,0,0,5.24,12.43q5.31,4.88,13.52,4.87,11.28,0,17.31-8.43l12,6.61q-6.26,8.44-12.87,11.79t-16.73,3.41q-15.91,0-25.38-9.38t-9.45-25.09q0-16.42,10.4-27.48t26.1-11q15.27,0,24.07,9.89,9,10,9,26.68c0,1.17-.08,3.06-.22,5.68ZM1270.75,352q-2.55-15.86-17.53-15.85-14.17,0-18.47,15.85Z"/>
+                    <path class="cls-5" d="M1325.5,324.93l-.72,5.89q8.13-7.71,16.43-7.7a19.4,19.4,0,0,1,13.23,5.3l-10.25,13.24q-4.44-3.8-8.87-3.79a11.44,11.44,0,0,0-5.38,1.21,10.8,10.8,0,0,0-4,3.78,23.2,23.2,0,0,0-2.83,6.65,64.4,64.4,0,0,0-1.78,9.74l-4.22,34.18H1301l8.43-68.5Z"/>
+                </svg>
+            </h1>
+            <div class="scroll_wrapper">
+                <p>scroll</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="slide_show_outer">
+            <div class="slide_show_wrap_1">
+                <ul class="slide_show_1">
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_2.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/sakujishoplogo_img1.png" alt="作字雑貨店ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/shikamachi_img1.png" alt="鹿町工業高校自転車競技部ウェア"></li>
+                    <li class="slide_show_content"><img src="/works_img/ideta_img1.png" alt="電気自動車idetaロゴマークコンペ応募作品"></li>
+                </ul>
+                <ul class="slide_show_1">
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_2.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/sakujishoplogo_img1.png" alt="作字雑貨店ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/shikamachi_img1.png" alt="鹿町工業高校自転車競技部ウェア"></li>
+                    <li class="slide_show_content"><img src="/works_img/ideta_img1.png" alt="電気自動車idetaロゴマークコンペ応募作品"></li>
+                </ul>
+                <ul class="slide_show_1">
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_2.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/sakujishoplogo_img1.png" alt="作字雑貨店ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/shikamachi_img1.png" alt="鹿町工業高校自転車競技部ウェア"></li>
+                    <li class="slide_show_content"><img src="/works_img/ideta_img1.png" alt="電気自動車idetaロゴマークコンペ応募作品"></li>
+                </ul>
+            </div>
+            <div class="slide_show_wrap_2">
+                <ul class="slide_show_2">
+                    <li class="slide_show_content"><img src="/works_img/kakogawalogo_img1.png" alt="加古川ミュージックフェス2022ロゴマークコンペ＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/mobuilt_img1.png" alt="mobuilt＿ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_1.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/zero_img_1.png" alt="zerobikefactoryウェア"></li>
+                </ul>
+                <ul class="slide_show_2">
+                    <li class="slide_show_content"><img src="/works_img/kakogawalogo_img1.png" alt="加古川ミュージックフェス2022ロゴマークコンペ＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/mobuilt_img1.png" alt="mobuilt＿ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_1.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/zero_img_1.png" alt="zerobikefactoryウェア"></li>
+                </ul>
+                <ul class="slide_show_2">
+                    <li class="slide_show_content"><img src="/works_img/kakogawalogo_img1.png" alt="加古川ミュージックフェス2022ロゴマークコンペ＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/mobuilt_img1.png" alt="mobuilt＿ロゴ"></li>
+                    <li class="slide_show_content"><img src="/works_img/vivivit_img_1.png" alt="タイポグラフィアワード＿応募作品"></li>
+                    <li class="slide_show_content"><img src="/works_img/zero_img_1.png" alt="zerobikefactoryウェア"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="works_text_outer">
+            <div class="works_text_wrapper">
+                <div class="works_logo fadeUpTrigger">
+                    <svg id="works_r1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 852.66 161.5"><defs><style>.cls-3{fill:#8df0fd;}.cls-4{fill:#6a6a6a;}</style></defs><polygon id="works_pass1" class="cls-3" points="842.79 153.38 580.42 153.38 590.29 76.74 852.66 76.74 842.79 153.38"/><g id="works_group_1"><path class="cls-4" d="M461,308.34,383.39,463,354,359.26,302.21,464.75,256.67,308.34h22.48L306.92,409.7l52.16-106.45L389,407l48.52-98.67Z" transform="translate(-256.67 -303.25)"/><path class="cls-2" d="M618.29,379.63a82.51,82.51,0,0,1-13.45,46A72.45,72.45,0,0,1,577,450.72a81.89,81.89,0,0,1-38,8.84q-33.35,0-54.38-21.23t-21-55.15q0-33.72,22.29-55.72t56.49-22.1q34.1,0,55.05,20.47T618.29,379.63Zm-22.1-.19q0-24.31-14.41-38.91T543.07,326q-24.41,0-41,16.33-16.43,16.33-16.43,40.83,0,24.21,15.28,40.07T539.51,439q24.3,0,40.45-17Q596.19,405.19,596.19,379.44Z" transform="translate(-256.67 -303.25)"/><path class="cls-2" d="M695.15,394.14l37.28,62.54H709.18l-35.16-61h-8l-7.49,61h-22L654.8,308.34h29.11q14.22,0,22.58,2.6a32,32,0,0,1,14.41,8.83q11.63,11.93,11.62,30.75Q732.52,385,695.15,394.14Zm-20.94-65.33-5.77,47.65h10.09q11.15,0,16.62-2.12a21.31,21.31,0,0,0,9.8-7.2,26.9,26.9,0,0,0,5.38-16.72q0-11.24-6.48-16.43t-20.42-5.18Z" transform="translate(-256.67 -303.25)"/><path class="cls-2" d="M793.92,308.34l-7.69,63,59.95-63H874l-69.18,69L867,456.68H840.51L784.6,384.34l-8.84,72.34h-22L772,308.34Z" transform="translate(-256.67 -303.25)"/><path class="cls-2" d="M982.51,327.27l-14.7,14q-10.47-15.36-24-15.37-9.79,0-16.23,6.06a19.92,19.92,0,0,0-6.44,15.18,19,19,0,0,0,4.42,12.58,42.32,42.32,0,0,0,6.48,5.67q4.28,3.16,10.71,7,19.13,11.15,25.56,20.18t6.53,23.92q0,19.22-12.68,31.13-12.48,11.91-32.95,11.91-16.53,0-28-7.11a47.45,47.45,0,0,1-10.76-9.27,83.8,83.8,0,0,1-9.61-13.88L897.58,418q6.82,12,13.35,16.53t17,4.51q11.63,0,18.21-6.15t6.58-17.48a19.05,19.05,0,0,0-4.81-13.16,42.83,42.83,0,0,0-7.15-6.25q-4.77-3.45-12.06-7.78-16.73-9.9-23.35-18.83Q899,360.41,899,347q0-18,12.49-29.78T943,305.27q12.39,0,21.14,5Q973.1,315.26,982.51,327.27Z" transform="translate(-256.67 -303.25)"/></g></svg>
+                </div>
+                <div class="works_text fadeUpTrigger">
+                    <p>WEBサイトやロゴ、アパレルやグッズなど様々なグラフィクデザインを行っております。<br> また、過去のコンペ応募作品についても下記リンクよりご覧いただくことができます。</p>
+                </div>
+                <div class="works_link fadeUpTrigger">
+                    <a href="works.html">制作実績</a>
+                    <div class="works_under_line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about_outer">
+            <div class="about_logo fadeUpTrigger">
+                <svg id="about_r1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1165.78 252.92"><defs><style>.cls-6{fill:#ff96ad;}.cls-2{fill:#6a6a6a;}</style></defs><polygon id="about_pass" class="cls-6" points="1151.18 248.42 777.08 248.42 791.67 134.72 1165.78 134.72 1151.18 248.42"/><g id="about_group"><path class="cls-2" d="M217.21,377.23,189,431.75H151.58L279.84,183.34l80.05,248.41H324l-16.83-54.52Zm14.87-29.74h65.48L272.63,265Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M415.61,199.86h43q20.26,0,32.89,4.35a47,47,0,0,1,20.87,14.72Q526,235.31,526,258.43q0,35.15-33.79,53.62,41,10.21,41,51.36a73,73,0,0,1-7.21,32,60.68,60.68,0,0,1-19.52,24,55.48,55.48,0,0,1-22.08,9.76,139.17,139.17,0,0,1-15.17,1.88q-8.87.68-21,.67H387.08Zm18.47,128.86-8.71,71H448.5q25.83,0,35.45-6.46,14.71-9.75,14.72-32.44a38.78,38.78,0,0,0-2.48-14.64,23,23,0,0,0-7.74-10,34.91,34.91,0,0,0-13.59-5.71,96.39,96.39,0,0,0-20.05-1.8ZM446,231.85l-8.41,69.39h9.76q44.16,0,44.16-41.16,0-28.23-33.65-28.23Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M809,311.3q0,39.65-21,71.94a113.18,113.18,0,0,1-43.55,39.2q-26.88,13.81-59.48,13.82-52.11,0-85-33.2T567,316.86q0-52.73,34.85-87.12t88.31-34.54q53.31,0,86.06,32T809,311.3Zm-34.54-.3q0-38-22.53-60.83-22.53-22.68-60.53-22.68T627.23,253q-25.68,25.54-25.68,63.84,0,37.84,23.88,62.62t60.37,24.64q38,0,63.24-26.59Q774.42,351.25,774.42,311Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M1039.2,199.86l-16.82,137.27q-5.7,45.36-21.32,66.38Q976,436.26,931.37,436.26q-35.75,0-59.63-21.63Q848,392.7,848,360.26q0-6.9.53-14.57t1.57-16.22L866,199.86h34.25l-16.37,134q-.76,6-1.13,11.11t-.38,9.46q0,23.13,12.92,36.5t35.45,13.37q26.13,0,39.65-16.83t18.32-55.11L1005,199.86Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M1155.3,231.85l-24.63,199.9h-34.39l24.63-199.9h-55.42l3.9-32h142.83l-3.9,32Z" transform="translate(-151.58 -183.34)"/></g></svg>
+            </div>
+            <div class="about_text fadeUpTrigger">
+                <p>趣味のサイクリングを行う中でチームウェアやロゴを作る機会があり組織やコミュニティの思いをビジュアルで表現するグラフィックデザインに興味を持つ。<br>
+                2020年よりデザイン活動を開始しロゴマークやウェブサイト、アパレルウェアなど様々な業務に携わる。<br>
+                何事も見た目重視のデザインオタク。</p>
+            </div>
+            <div class="about_link fadeUpTrigger">
+                <a href="about.html">詳しく見る</a>
+                <div class="about_under_line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact_outer">
+            <div class="contact_logo">
+                <svg id="contact_r1" class="fadeUpTrigger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1039.33 169.09"><defs><style>.cls-1{fill:#feb740;}.cls-2{fill:#6a6a6a;}</style></defs><polygon id="contact_pass1" class="cls-1" points="1029.47 158.91 767.09 158.91 776.96 82.27 1039.34 82.27 1029.47 158.91"/><g id="contact_group_1"><path class="cls-2" d="M300.74,323.28l-3,24q-19.31-19.6-46-19.6-23.53,0-38,16.72t-14.61,43.33q0,25,14,39t39.39,13.93A58.08,58.08,0,0,0,290,427.62l-3.17,26q-20.46,7.59-38.14,7.59-32.28,0-52-20.46Q177,420.52,177,386.79q0-34.4,20.94-57.07T250.78,307Q275.86,307,300.74,323.28Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M467.52,381.31a82.51,82.51,0,0,1-13.45,46,72.38,72.38,0,0,1-27.86,25.07,81.89,81.89,0,0,1-38,8.84q-33.35,0-54.38-21.23t-21-55.15q0-33.72,22.29-55.72T391.53,307q34.11,0,55.05,20.47T467.52,381.31Zm-22.09-.19q0-24.31-14.41-38.91T392.3,327.7q-24.41,0-41,16.33-16.42,16.34-16.42,40.83,0,24.21,15.27,40.07t38.62,15.75q24.31,0,40.45-17Q445.42,406.87,445.43,381.12Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M630.08,310,610.67,468.55l-90-114.91L507.78,458.36h-22L505.09,302l90,114.71L608.18,310Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M704.44,330.49,688.69,458.36h-22l15.75-127.87H647l2.5-20.47h91.36l-2.49,20.47Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M772.17,423.49l-18.06,34.87H730.19l82-158.91,51.21,158.91h-23l-10.76-34.87Zm9.52-19h41.88l-15.94-52.74Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M1006,323.28l-3,24q-19.31-19.6-46-19.6-23.53,0-38,16.72t-14.61,43.33q0,25,14,39t39.39,13.93a58.08,58.08,0,0,0,37.47-13.06l-3.17,26q-20.46,7.59-38.14,7.59-32.28,0-52-20.46-19.69-20.26-19.69-54,0-34.4,20.94-57.07T956.06,307Q981.14,307,1006,323.28Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M1073.46,330.49l-15.75,127.87h-22l15.75-127.87H1016l2.5-20.47h91.36l-2.49,20.47Z" transform="translate(-177 -299.45)"/></g></svg>
+            </div>
+            <div class="contact_text fadeUpTrigger">
+                <p>デザインの制作や見積もりは<a href="malito:yoyoshiki0514@gmail.com">こちらのメールアドレス</a>までお願いします。</p>
+            </div>
+            <div class="contact_link fadeUpTrigger">
+                <a href="contact.html">詳しく見る</a>
+                <div class="contact_under_line"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_outer">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="index.html" class="footer_index">HOME</a></li>
+                    <li><a href="works.html" class="footer_works">WORKS</a></li>
+                    <li><a href="about.html" class="footer_about">ABOUT</a></li>
+                    <li><a href="contact.html" class="footer_contact">CONTACT</a></li>
+                </ul>
+                <div class="footer_logo">
+                    <a href="index.html"><img src="img/nakano_logo_gray.png" alt="nakano_logo"></a>
+                </div>
+            </nav>
+            <div class="footer_sns_wrapper">
+                <ul>
+                    <li><a href="https://www.instagram.com/nikuudon_design/" target="_blank"><img src="img/instagram_icon_gray.png" alt="instagram_icon"></a></li>
+                    <li><a href="https://twitter.com/YmgoQ" target="_blank"><img src="img/twitter_icon_gray.png" alt="twitter_icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <small>©2021-nakano-design</small>
+        </div>
+    </footer>
+
+
+
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <script src="js/loading.js"></script>
+</body>    
+</html>

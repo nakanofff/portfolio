@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+#works_content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18vh;
+    margin-bottom: 20vh;
+
+    .works_content_wrapper{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img{
+            margin-top: 8vh;
+            width: 100%;
+        }
+        p{  
+            width: 80%;
+            font-size: 2em;
+        }
+
+        .works_content_explanation{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 0;
+
+            li{
+                font-family: 'M PLUS 1p', sans-serif;
+                font-feature-settings: "palt";
+                font-size: 1em;
+                color: #000;
+                margin-top: 4px;
+                margin-bottom: 0;
+                padding-left: 8px;
+
+                h2{
+                    margin-bottom: 2px;
+                    font-size: 1.4em !important;
+                    vertical-align: baseline;
+
+                    .title_span{
+                        font-size: 0.7em !important;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    width: 20%;
+                }
+                .url_border{
+                    width: 20%;
+                    height: 2px;
+                    background-color: #707070;
+                    transition: all 0.5s ease-in-out;
+                }
+                a:hover + .url_border{
+                    width: 60%;
+                }
+                p{
+                    font-size: 0.8em;
+                    margin: 0;
+                }
+
+            }
+            .day{
+                margin-bottom: 8px;
+                margin-bottom: 0;
+            }
+            .target{
+                margin-bottom: 0;
+            }
+            .works{
+                margin-top: 0px;
+            }
+            .comment{
+                margin-top: 16px;
+            }
+            ::selection{
+                color: #ffffff;
+                background-color: #707070;
+            }
+            .comment{
+                margin-bottom: 12px;
+            }
+            
+        }
+    }
+
+}

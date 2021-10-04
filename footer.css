@@ -1,0 +1,163 @@
+footer {
+  width: 100vw;
+  height: 32vh;
+  background-color: #EFEFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+footer .footer_outer {
+  width: 95%;
+  height: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer_outer .footer_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+footer .footer_outer .footer_nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer_outer .footer_nav ul li {
+  text-decoration: none;
+  margin-bottom: 1vh;
+}
+
+footer .footer_outer .footer_nav ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  color: #BFBFBF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer_outer .footer_nav ul li .footer_index:hover {
+  color: #5b5c5c;
+}
+
+footer .footer_outer .footer_nav ul li .footer_works:hover {
+  color: #8DF0FD;
+}
+
+footer .footer_outer .footer_nav ul li .footer_about:hover {
+  color: #FF96AD;
+}
+
+footer .footer_outer .footer_nav ul li .footer_contact:hover {
+  color: #FFB740;
+}
+
+footer .footer_outer .footer_nav .footer_logo {
+  width: 60px;
+  height: 60px;
+}
+
+footer .footer_outer .footer_nav .footer_logo a {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer_outer .footer_nav .footer_logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer_outer .footer_nav .footer_logo a:hover {
+  opacity: 0.7;
+}
+
+footer .footer_outer .footer_sns_wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer_outer .footer_sns_wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer_outer .footer_sns_wrapper ul li {
+  list-style: none;
+  width: 28px;
+  height: 28px;
+  margin-top: 8px;
+}
+
+footer .footer_outer .footer_sns_wrapper ul li a {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer_outer .footer_sns_wrapper ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .footer_outer .footer_sns_wrapper ul li a:hover {
+  opacity: 0.7;
+}
+
+footer .copy small {
+  font-size: 0.4em;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  color: #BFBFBF;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,171 @@
+.contact .contact_outer {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20vh;
+}
+
+.contact .contact_outer .contact_wrapper {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact_outer .contact_wrapper .contact_logo {
+  width: 32%;
+  height: auto;
+}
+
+.contact .contact_outer .contact_wrapper .contact_logo #contact_r1 {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact_outer .contact_wrapper .contact_text {
+  color: #000;
+  font-family: 'M PLUS 1p', sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.contact .contact_outer .contact_wrapper .contact_text a {
+  text-decoration: none;
+  color: #000;
+  background-color: #FEB740;
+}
+
+.contact .contact_outer .question_wrapper {
+  width: 52%;
+  height: auto;
+  padding-top: 16vh;
+  padding-bottom: 16vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact_outer .question_wrapper .question_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.contact .contact_outer .question_wrapper .question_title h2 {
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  color: #AFB1B4;
+  margin-top: 0;
+  margin-bottom: 2px;
+  padding-left: 20px;
+}
+
+.contact .contact_outer .question_wrapper .question_title .question_title_line {
+  width: 100%;
+  height: 4px;
+  background-color: #FEB740;
+}
+
+.contact .contact_outer .question_wrapper .accordion_area {
+  width: 94%;
+  height: auto;
+  padding: 0;
+}
+
+.contact .contact_outer .question_wrapper .accordion_area li {
+  list-style: none;
+}
+
+.contact .contact_outer .question_wrapper .accordion_area li section .accordion_title {
+  border-bottom: 2px solid #AFB1B4;
+  color: #000;
+  font-family: 'M PLUS 1p', sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-size: 1em;
+}
+
+.contact .contact_outer .question_wrapper .accordion_area li section .accordion_box {
+  display: none;
+}
+
+.contact .contact_outer .question_wrapper .accordion_area li section .accordion_box p {
+  color: #000;
+  font-family: 'M PLUS 1p', sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 420px) {
+  .contact .contact_outer .contact_wrapper {
+    width: 88% !important;
+  }
+  .contact .contact_outer .contact_wrapper .contact_logo {
+    width: 64% !important;
+  }
+  .contact .contact_outer .contact_wrapper .contact_text {
+    font-size: 0.8em;
+    text-align: start;
+  }
+  .contact .contact_outer .question_wrapper {
+    width: 88% !important;
+  }
+  .contact .contact_outer .question_wrapper .question_title h2 {
+    font-size: 1.2em !important;
+    padding-left: 8px !important;
+  }
+  .contact .contact_outer .question_wrapper .question_title .question_title_line {
+    height: 2px !important;
+  }
+  .contact .contact_outer .question_wrapper .accordion_area {
+    margin-top: 4px;
+  }
+  .contact .contact_outer .question_wrapper .accordion_area li section .accordion_title {
+    font-size: 1em !important;
+  }
+  .contact .contact_outer .question_wrapper .accordion_area li section .accordion_box p {
+    font-size: 0.8em !important;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
