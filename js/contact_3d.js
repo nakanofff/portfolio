@@ -12,7 +12,7 @@ function init() {
     camera.position.set(0, -150, 1000);
  
     const loader = new THREE.GLTFLoader();
-    const url = '/img/contact.glb';
+    const url = './img/contact.glb';
  
     let model = null;
     loader.load(
