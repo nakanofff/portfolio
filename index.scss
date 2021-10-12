@@ -34,46 +34,63 @@
 }
 
 #top{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
-    .top_wrapper{
-        width: 97%;
-        height: 96%;
-        border: 2px solid #BFBFBF;
-        position: relative;
+    .scroll_wrapper{
+        width: 9vw;
+        height: auto;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        right: 0;
+        margin: 18px;
+        overflow: hidden;
 
-        .top_title_wrapper{
-            width: 24vw;
-            position: absolute;
-            transform: translate(-50%,-50%);
-            left: 20%;
-            top: 50%;
-        }
-        .scroll_wrapper{
-            width: 9vw;
-            height: auto;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 18px;
-            overflow: hidden;
-
-            p{
-                font-family: futura-pt, sans-serif;
-                font-weight: 500;
-                font-style: italic;
-                color: #dfdfdf;
-                margin: 0;
-                font-size: 2.3em;
-                text-align: right;
-                animation: scroll 1s ease-in-out infinite;
-            }
+        p{
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            color: #ffffff;
+            margin: 0;
+            font-size: 3em;
+            text-align: right;
+            animation: scroll 1s ease-in-out infinite;
         }
     }
+
+        .top_background_pc{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .top_background_sm{
+            display: none;
+        }
+    
+        h1{
+            position: absolute;
+            z-index: 10;
+            width: 48%;
+            bottom: 0;
+            left: 0;
+            fill: #fff;
+            margin: 18px;
+        }
+    
+    
 }
 
 #works{
@@ -245,6 +262,7 @@
                 font-size: 1.2em;;
                 font-feature-settings: "palt";
                 font-size: 1em;
+                text-align: center;
 
                 a{
                     text-decoration: none;
@@ -378,21 +396,42 @@
 @media screen and (max-width: 420px){
     #top{
 
-        .top_wrapper{
-            height: 98% !important;
+        .scroll_wrapper{
+            width: 50vw;
+            margin: 4px;
 
-            .top_title_wrapper{
-                width: 62vw;
-                left: 50%;
+            p{
+                font-size: 1.4em;
             }
-            .scroll_wrapper{
-                width: 50vw;
-                margin: 4px;
+        }
+        .top_background_pc{
+            display: none;
+        }
+        .top_background_sm{
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
 
-                p{
-                    font-size: 1.4em;
-                }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
+        }
+        h1{
+            width: 80% !important;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transform: translate(0,50%);
+
         }
     }
     
@@ -473,6 +512,12 @@
             .about_logo{
                 width: 60%;
             }
+            .about_text{
+
+                p{
+                    font-size: 0.8em;
+                }
+            }
             
         }
         .about_link{
@@ -492,11 +537,18 @@
             .contact_logo{
                 width: 60%;
             }
+            .contact_text{
+
+                p{
+                    font-size: 0.8em;
+                    text-align: center;
+                }
+            }
         }
         .contact_link{
 
             .contact_under_line{
-                width: 88%;
+                width: 88% !important;
                 height: 2px;
             }
         }

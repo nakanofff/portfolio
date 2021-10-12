@@ -94,3 +94,28 @@
     }
 
 }
+@media screen and (max-width: 420px){
+    #works_content{
+
+        .works_content_wrapper{
+            width: 88% !important;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                margin-top: 8px;
+            }
+
+            .works_content_explanation{
+
+                li{
+                    font-size: 0.8em;
+
+                    h2{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
