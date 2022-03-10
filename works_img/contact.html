@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NakanoDesignPortfolio-contact</title>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'iba3mzk',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="loading.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<link rel="stylesheet" href="https://use.typekit.net/nyg7mzb.css">
+<link rel="icon" href="img/nakano_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap" rel="stylesheet"> 
+<script src="./js/three.min.js"></script>
+<script src="./js/GLTFLoader.js"></script>
+<script src="./js/contact_3d.js"></script>
+<script src="./js/move.js"></script>
+</head>
+<body>
+
+    <div id="splash">
+        <div id="splash_text"></div>
+            <div class="loader_cover loader_cover-up"></div>
+            <div class="loader_cover loader_cover-down"></div>
+    </div>
+
+    <header>
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+            </div>
+            <div class="menu_button">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        </div>
+
+        <canvas id="home_canvas">
+        </canvas>
+        
+        <div class="menu_outer">
+            <div class="menu_header_warpper">
+                <div class="menu_header_logo">
+                    <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+                </div>
+                <div class="close_button">
+                    <div class="close_line1"></div>
+                    <div class="close_line2"></div>
+                </div>
+            </div>
+
+            <div class="sns_wrapper">
+                <div class="instagram_section">
+                    <a href="https://www.instagram.com/nikuudon_design/"><img src="./img/instagram_icon_gray.png" alt="インスタグラムアイコン"></a>
+                </div>
+                <div class="twitter_section">
+                    <a href="https://twitter.com/YmgoQ"><img src="./img/twitter_icon_gray.png" alt="ツイッターアイコン"></a>
+                </div>
+            </div>
+
+            <div class="menu_wrapper">
+                        <nav class="menu_contents">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="home_link">HOME</a>
+                                    <div class="home_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="works.html" class="works_link">WORKS</a>
+                                    <div class="works_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="about_link">ABOUT</a>
+                                    <div class="about_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="contact_link">CONTACT</a>
+                                    <div class="contact_after_line">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+    </header>
+
+    <section id="first_animetion">
+
+    </section>
+
+    <section class="contact">
+        <div class="contact_outer">
+            <div class="contact_wrapper">
+                <h1 class="contact_logo">
+                    <svg id="contact_r1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1039.33 169.09"><defs><style>.cls-1{fill:#feb740;}.cls-2{fill:#6a6a6a;}</style></defs><polygon id="contact_pass1" class="cls-1" points="1029.47 158.91 767.09 158.91 776.96 82.27 1039.34 82.27 1029.47 158.91"/><g id="contact_group_1"><path class="cls-2" d="M300.74,323.28l-3,24q-19.31-19.6-46-19.6-23.53,0-38,16.72t-14.61,43.33q0,25,14,39t39.39,13.93A58.08,58.08,0,0,0,290,427.62l-3.17,26q-20.46,7.59-38.14,7.59-32.28,0-52-20.46Q177,420.52,177,386.79q0-34.4,20.94-57.07T250.78,307Q275.86,307,300.74,323.28Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M467.52,381.31a82.51,82.51,0,0,1-13.45,46,72.38,72.38,0,0,1-27.86,25.07,81.89,81.89,0,0,1-38,8.84q-33.35,0-54.38-21.23t-21-55.15q0-33.72,22.29-55.72T391.53,307q34.11,0,55.05,20.47T467.52,381.31Zm-22.09-.19q0-24.31-14.41-38.91T392.3,327.7q-24.41,0-41,16.33-16.42,16.34-16.42,40.83,0,24.21,15.27,40.07t38.62,15.75q24.31,0,40.45-17Q445.42,406.87,445.43,381.12Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M630.08,310,610.67,468.55l-90-114.91L507.78,458.36h-22L505.09,302l90,114.71L608.18,310Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M704.44,330.49,688.69,458.36h-22l15.75-127.87H647l2.5-20.47h91.36l-2.49,20.47Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M772.17,423.49l-18.06,34.87H730.19l82-158.91,51.21,158.91h-23l-10.76-34.87Zm9.52-19h41.88l-15.94-52.74Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M1006,323.28l-3,24q-19.31-19.6-46-19.6-23.53,0-38,16.72t-14.61,43.33q0,25,14,39t39.39,13.93a58.08,58.08,0,0,0,37.47-13.06l-3.17,26q-20.46,7.59-38.14,7.59-32.28,0-52-20.46-19.69-20.26-19.69-54,0-34.4,20.94-57.07T956.06,307Q981.14,307,1006,323.28Z" transform="translate(-177 -299.45)"/><path class="cls-2" d="M1073.46,330.49l-15.75,127.87h-22l15.75-127.87H1016l2.5-20.47h91.36l-2.49,20.47Z" transform="translate(-177 -299.45)"/></g></svg>
+                </h1>
+                <p class="contact_text">
+                    デザインの制作や見積もりは<a href="mailto:yoyoshiki0514@gmail.com">こちらのメールアドレス</a>までお願いします。<br>
+                    2−3日以内にお送りいただいたメールアドレスへ返信いたします。
+                </p>
+            </div>
+            <div class="question_wrapper">
+                <div class="question_title">
+                    <h2>Q&A</h2>
+                    <div class="question_title_line"></div>
+                </div>
+                    <ul class="accordion_area">
+                        <li>
+                            <section>
+                                <h3 class="accordion_title">お見積もりの目安を教えてください。</h3>
+                                <div class="accordion_box">
+                                <p>納品させていただく制作物によって変化いたします。ご希望の制作物をご記入の上、メールにてご相談ください。</p>
+                                </div>
+                            </section>
+                            </li>
+                            <li>
+                            <section>
+                                <h3 class="accordion_title">ウェアデザインの入稿まで担当いただけますか。</h3>
+                                <div class="accordion_box">
+                                <p>はい。入稿データ納品、印刷メーカとのオペレーティングも担当可能です。</p>
+                                </div>
+                            </section>
+                            </li>
+                            <li>
+                            <section>
+                                <h3 class="accordion_title">既存のデザインに似た体裁の制作をして欲しいです。</h3>
+                                <div class="accordion_box ">
+                                <p>申し訳ありません。あからさまなコピーと認識できるデザインについてはお断りさせていただいております。</p>
+                                </div>
+                            </section>
+                            
+                            </li>
+                        </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_outer">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="index.html" class="footer_index">HOME</a></li>
+                    <li><a href="works.html" class="footer_works">WORKS</a></li>
+                    <li><a href="about.html" class="footer_about">ABOUT</a></li>
+                    <li><a href="contact.html" class="footer_contact">CONTACT</a></li>
+                </ul>
+                <div class="footer_logo">
+                    <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_logo"></a>
+                </div>
+            </nav>
+            <div class="footer_sns_wrapper">
+                <ul>
+                    <li><a href="https://www.instagram.com/nikuudon_design/" target="_blank"><img src="./img/instagram_icon_gray.png" alt="instagram_icon"></a></li>
+                    <li><a href="https://twitter.com/YmgoQ" target="_blank"><img src="./img/twitter_icon_gray.png" alt="twitter_icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <small>©2021-nakano-design</small>
+        </div>
+
+    </footer>
+
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="js/loading.js"></script>
+    
+</body>    
+</html>

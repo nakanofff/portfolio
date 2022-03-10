@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta name="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NakanoDesignPortfolio-about</title>
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'iba3mzk',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="loading.css">
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="about.css">
+<link rel="stylesheet" href="https://use.typekit.net/nyg7mzb.css">
+<link rel="icon" href="img/nakano_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap" rel="stylesheet"> 
+<script src="./js/three.min.js"></script>
+<script src="./js/GLTFLoader.js"></script>
+<script src="./js/about_3d.js"></script>
+<script src="./js/move.js"></script>
+<script src="./js/fadein.js"></script>
+</head>
+<body>
+
+    <div id="splash">
+        <div id="splash_text"></div>
+            <div class="loader_cover loader_cover-up"></div>
+            <div class="loader_cover loader_cover-down"></div>
+    </div>
+
+    <header>
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+            </div>
+            <div class="menu_button">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        </div>
+
+        <canvas id="home_canvas">
+        </canvas>
+        
+        <div class="menu_outer">
+            <div class="menu_header_warpper">
+                <div class="menu_header_logo">
+                    <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_portfolio_logo"></a>
+                </div>
+                <div class="close_button">
+                    <div class="close_line1"></div>
+                    <div class="close_line2"></div>
+                </div>
+            </div>
+
+            <div class="sns_wrapper">
+                <div class="instagram_section">
+                    <a href="https://www.instagram.com/nikuudon_design/"><img src="./img/instagram_icon_gray.png" alt="インスタグラムアイコン"></a>
+                </div>
+                <div class="twitter_section">
+                    <a href="https://twitter.com/YmgoQ"><img src="./img/twitter_icon_gray.png" alt="ツイッターアイコン"></a>
+                </div>
+            </div>
+
+            <div class="menu_wrapper">
+                        <nav class="menu_contents">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="home_link">HOME</a>
+                                    <div class="home_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="works.html" class="works_link">WORKS</a>
+                                    <div class="works_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="about_link">ABOUT</a>
+                                    <div class="about_after_line">
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="contact_link">CONTACT</a>
+                                    <div class="contact_after_line">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+    </header>
+
+    <section id="first_animetion">
+
+    </section>
+
+    <section class="about">
+        <div class="about_outer">
+            <div class="about_wrapper">
+                <div class="about_title">
+                    <h1>
+                        <svg id="about_r1" class="fadeUpTrigger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1165.78 252.92"><defs><style>.cls-1{fill:#ff96ad;}.cls-2{fill:#6a6a6a;}</style></defs><polygon id="about_pass" class="cls-1" points="1151.18 248.42 777.08 248.42 791.67 134.72 1165.78 134.72 1151.18 248.42"/><g id="about_group"><path class="cls-2" d="M217.21,377.23,189,431.75H151.58L279.84,183.34l80.05,248.41H324l-16.83-54.52Zm14.87-29.74h65.48L272.63,265Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M415.61,199.86h43q20.26,0,32.89,4.35a47,47,0,0,1,20.87,14.72Q526,235.31,526,258.43q0,35.15-33.79,53.62,41,10.21,41,51.36a73,73,0,0,1-7.21,32,60.68,60.68,0,0,1-19.52,24,55.48,55.48,0,0,1-22.08,9.76,139.17,139.17,0,0,1-15.17,1.88q-8.87.68-21,.67H387.08Zm18.47,128.86-8.71,71H448.5q25.83,0,35.45-6.46,14.71-9.75,14.72-32.44a38.78,38.78,0,0,0-2.48-14.64,23,23,0,0,0-7.74-10,34.91,34.91,0,0,0-13.59-5.71,96.39,96.39,0,0,0-20.05-1.8ZM446,231.85l-8.41,69.39h9.76q44.16,0,44.16-41.16,0-28.23-33.65-28.23Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M809,311.3q0,39.65-21,71.94a113.18,113.18,0,0,1-43.55,39.2q-26.88,13.81-59.48,13.82-52.11,0-85-33.2T567,316.86q0-52.73,34.85-87.12t88.31-34.54q53.31,0,86.06,32T809,311.3Zm-34.54-.3q0-38-22.53-60.83-22.53-22.68-60.53-22.68T627.23,253q-25.68,25.54-25.68,63.84,0,37.84,23.88,62.62t60.37,24.64q38,0,63.24-26.59Q774.42,351.25,774.42,311Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M1039.2,199.86l-16.82,137.27q-5.7,45.36-21.32,66.38Q976,436.26,931.37,436.26q-35.75,0-59.63-21.63Q848,392.7,848,360.26q0-6.9.53-14.57t1.57-16.22L866,199.86h34.25l-16.37,134q-.76,6-1.13,11.11t-.38,9.46q0,23.13,12.92,36.5t35.45,13.37q26.13,0,39.65-16.83t18.32-55.11L1005,199.86Z" transform="translate(-151.58 -183.34)"/><path class="cls-2" d="M1155.3,231.85l-24.63,199.9h-34.39l24.63-199.9h-55.42l3.9-32h142.83l-3.9,32Z" transform="translate(-151.58 -183.34)"/></g></svg>
+                    </h1>
+                </div>
+                <div class="about_img">
+                    <img src="./img/main_pc.png" alt="nakanoyoshiki_about">
+                </div>
+                <div class="about_info">
+                    <ul class="about_name fadeUpTrigger">
+                        <li class="name_ja">ナカノヨシキ</li>
+                        <li class="name_en">Nakano Yoshiki</li>
+                    </ul>
+                    <ul class="about_content fadeUpTrigger">
+                        <li>主な制作物：グラフィックデザイン、web制作</li>
+                        <li>所在地：大阪府</li>
+                        <li>お問い合わせ先：yoyoshiki0514@gmail.com</li>
+                    </ul>
+                    <ul class="about_sns fadeUpTrigger">
+                        <li>twitter：nakano design＿0023</li>
+                        <li>instagram :nakanodesign</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="service_outer">
+            <div class="service_wrapper">
+                <div class="service_title fadeUpTrigger">
+                    <h2>SERVICE</h2>
+                    <div class="service_under_line"></div>
+                </div>
+                <div class="service_contents">
+                    <div class="service_content fadeUpTrigger">
+                        <img src="./img/logodesign_works.png" alt="ロゴデザイン">
+                        <h3>ロゴデザイン</h3>
+                        <p>個人やサービス、またそのターゲットに最適なロゴを制作いたします。<br>
+                            ロゴから発展した名刺や封筒などのCIデザインもお任せください。
+                        </p>
+                    </div>
+                    <div class="service_content fadeUpTrigger">
+                        <img src="./img/webdesign_works.png" alt="ウェブデザイン">
+                        <h3>Webデザイン</h3>
+                        <p>
+                            オリジナリティのあるレイアウトやアニメーションを用いた静的ウェブサイトの制作を行います。
+                        </p>
+                    </div>
+                    <div class="service_content fadeUpTrigger">
+                        <img src="./img/graphicdesign_works.png" alt="グラフィックデザイン">
+                        <h3>グラフィックデザイン</h3>
+                        <p>スポーツウェアやチラシ、フライヤーなど様々なグラフィックデザインを制作しております。<br>
+                            また、デザイン図の入稿データ作成も行います。
+                        </p>
+                    </div>
+                </div>
+                <div class="service_link fadeUpTrigger">
+                    <a href="works.html">過去の制作物を見る</a>
+                    <div class="service_link_line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_outer">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="index.html" class="footer_index">HOME</a></li>
+                    <li><a href="works.html" class="footer_works">WORKS</a></li>
+                    <li><a href="about.html" class="footer_about">ABOUT</a></li>
+                    <li><a href="contact.html" class="footer_contact">CONTACT</a></li>
+                </ul>
+                <div class="footer_logo">
+                    <a href="index.html"><img src="./img/nakano_logo_gray.png" alt="nakano_logo"></a>
+                </div>
+            </nav>
+            <div class="footer_sns_wrapper">
+                <ul>
+                    <li><a href="https://www.instagram.com/nikuudon_design/" target="_blank"><img src="./img/instagram_icon_gray.png" alt="instagram_icon"></a></li>
+                    <li><a href="https://twitter.com/YmgoQ" target="_blank"><img src="./img/twitter_icon_gray.png" alt="twitter_icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <small>©2021-nakano-design</small>
+        </div>
+    </footer>
+
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="js/loading.js"></script>
+    
+</body>    
+</html>
