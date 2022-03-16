@@ -127,6 +127,7 @@
   position: absolute;
   z-index: 10;
   width: 48%;
+  height: auto;
   bottom: 0;
   left: 0;
   fill: #fff;
@@ -135,9 +136,152 @@
 
 #works {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   position: relative;
+}
+
+#works .works_title {
+  width: 100vw;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16vh;
+  margin-bottom: 4vh;
+}
+
+#works .works_title .works_logo {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#works .works_title .works_logo #works_r1 {
+  width: 25%;
+}
+
+#works .works_grid {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#works .works_grid .grid {
+  width: 85vw;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#works .works_grid .grid .item {
+  display: block;
+  position: absolute;
+  width: 25%;
+  margin-left: 6.25%;
+  margin-bottom: 25px;
+  z-index: 1;
+  list-style: none;
+}
+
+#works .works_grid .grid .item .item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#works .works_grid .grid .item .item-content a {
+  width: 100%;
+  height: 100%;
+}
+
+#works .works_grid .grid .item .item-content a img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#works .works_grid .grid .item .content_img:hover {
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+          transform: scale3d(1.2, 1.2, 1.2);
+}
+
+#works .works_grid .works_link {
+  margin-top: 4%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#works .works_grid .works_link a {
+  color: #000;
+  font-family: 'M PLUS 1p', sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  text-decoration: none;
+}
+
+#works .works_grid .works_link ::-moz-selection {
+  color: #ffffff;
+  background-color: #707070;
+}
+
+#works .works_grid .works_link ::selection {
+  color: #ffffff;
+  background-color: #707070;
+}
+
+#works .works_grid .works_link .works_under_line {
+  width: 20%;
+  height: 3px;
+  background-color: #8df0fd;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#works .works_grid .works_link a:hover + .works_under_line {
+  width: 100%;
 }
 
 #works .slide_show_outer {
@@ -236,16 +380,6 @@
           justify-content: center;
 }
 
-#works .works_text_outer .works_text_wrapper .works_logo {
-  width: 64%;
-  height: auto;
-}
-
-#works .works_text_outer .works_text_wrapper .works_logo #works_r1 {
-  width: 100%;
-  height: 100%;
-}
-
 #works .works_text_outer .works_text_wrapper .works_text {
   margin-top: 8%;
 }
@@ -266,55 +400,6 @@
 #works .works_text_outer .works_text_wrapper .works_text ::selection {
   color: #ffffff;
   background-color: #707070;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link {
-  margin-top: 8%;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link a {
-  color: #000;
-  font-family: 'M PLUS 1p', sans-serif;
-  -webkit-font-feature-settings: "palt";
-          font-feature-settings: "palt";
-  text-decoration: none;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link ::-moz-selection {
-  color: #ffffff;
-  background-color: #707070;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link ::selection {
-  color: #ffffff;
-  background-color: #707070;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link .works_under_line {
-  width: 20%;
-  height: 3px;
-  background-color: #8df0fd;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#works .works_text_outer .works_text_wrapper .works_link a:hover + .works_under_line {
-  width: 100%;
 }
 
 #about {
@@ -614,6 +699,32 @@
   }
   #works {
     width: 100vw;
+    height: auto;
+  }
+  #works .works_title {
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+  }
+  #works .works_title .works_logo #works_r1 {
+    width: 60% !important;
+  }
+  #works .works_grid {
+    height: auto;
+  }
+  #works .works_grid .grid {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #works .works_grid .grid .item {
+    margin-left: 0;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  #works .works_grid .works_link .works_under_line {
+    width: 88%;
+    height: 3px;
   }
   #works .slide_show_outer {
     width: 100vw;
@@ -659,10 +770,6 @@
   }
   #works .works_text_outer .works_text_wrapper .works_text p {
     font-size: 0.8em;
-  }
-  #works .works_text_outer .works_text_wrapper .works_link .works_under_line {
-    width: 100%;
-    height: 2px;
   }
   #about {
     height: 80vh;

@@ -18,6 +18,10 @@
             margin-top: 8vh;
             width: 100%;
         }
+        video{
+            margin-top: 8vh;
+            width: 100%;
+        }
         p{  
             width: 80%;
             font-size: 2em;
@@ -101,6 +105,11 @@
             width: 88% !important;
 
             img{
+                width: 100%;
+                object-fit: cover;
+                margin-top: 8px;
+            }
+            video{
                 width: 100%;
                 object-fit: cover;
                 margin-top: 8px;
